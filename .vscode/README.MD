@@ -6,7 +6,7 @@
 <br>
 
 <p align="center">
-  <img alt="link-in-bio" src=".github/preview.jpg" width="100%">
+  <img alt="link-in-bio" src=".assets/bg-desktop" width="100%">
 </p>
 
 ## 🚀 Tecnologias
