@@ -72,11 +72,15 @@ body * {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  animation: slide-out 0.3s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.3s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--surface-color);
 }
 
 #switch span {
@@ -151,4 +155,22 @@ footer a {
 footer a:hover {
   color: rgb(0, 89, 255);
   transition: 0.2s;
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
 }
